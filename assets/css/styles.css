@@ -1,3 +1,10 @@
+:root{
+    --color1: #000;
+    --color2: orange;
+    --color3: whitesmoke;
+
+}
+/*Estilos generales*/
 *{
     margin-right: 0px;
     margin-left: 0px;
@@ -6,7 +13,7 @@
     border-right: 0px;
 }
 
-
+/*tamaño foto index*/
 .foto{
     width: 850px;
     height: 100vh;
@@ -14,108 +21,44 @@
     align-items: center;
 
 }
+/*configuración de la navbar*/
 .container-fluid{
     align-items: center;
-    background-color: black;
+    background-color:var(--color1);
     border: 0px;
     display: flex;
-    margin: -10px;
+    margin: -8px;
     padding: 0px;
     border-right: 0vh;
+    color: var(--color2);
     
 }
-.nav-bar{
-    color: orange;
-
-}
+/*color texto navbar*/
 .nav-link{
-    color: orange;
+    color: var(--color2);
 }
-.navbar-brand{
-    display: flex;
-
-}
-.slide3{
-    display: flex;
-}
-
-.container-fluid{
-    border: 0px;
-    display: flex;
-    padding-left: 0px;
-    padding-right: 0px;
-    flex-flow: row;
-    border-top: 10vh;
-    
-}
-.h2{
-    border: 0px;
-    background-color: black;
-    display: flex;
-}
-.bor{
-    border: 0px;
-}
-.col-lg-6{
-    border: 0px;
-    color: whitesmoke;
-    padding: 0px;
-    
-}
+/*configuración bloque de contacto*/
 .contc{
-    color: aliceblue;
+    color: var(--color2);
     display: flex;
     padding: 50px;
     
 }
-.titulocont{
-    text-align: center;
-}
-.barra{
-    padding: 0vh;
-}
+/*margin del slide*/
 .slide1{
-    margin-top: 60px;
+    margin-top: 8vh;
 }
+/*configuración altura de texto en el slide*/
 .texto1{
     margin-top: 50px;
 }
-.boton imagen{
-    align-items: center;
-    text-align: center;
-}
+/*configuración del botón en el slide*/
 .button{
-    padding: 70px
+    padding: 70px;
     border: 20vh;
     border: solid;
 }
-.foto1{
-    height: 600px;
-    width: 70vh;
-    text-align: center;
-    background-color: black;
-    display: flex;
-}
-.fotodetalle{
-    
-    margin: auto;
-    height: 450px;
-    width: 100vh;
-    text-align: center;
-    background-color: black;
-    display: flex;
-
-}
-.sl2{
-    margin: auto;
-    display: flex;
-    align-items: center;
-    border: none;
-    padding: 0px;
-    margin-right: 0px;
-    height: 400px;
-
-}
+/*configuración foto detalle */
 .detalle{
     height: 900px;
     margin: auto;
@@ -124,18 +67,63 @@
     border-radius: 10px;
     align-content: auto;
 }
+/*color del fondo de la imagen*/
 .foto{
-    background-color: black;
+    background-color: var(--color1);
 }
 .textodetalle{
     border: solid;
-    color: whitesmoke;
+    color: var(--color3);
     align-items: normal;
     font-size: large;
     font-weight: bolder;
     align-content: end;
 }
+/*configuración carta detalle*/
 .carta{
-    background-color: black;
-    color: aliceblue;
+    background-color: var(--color1);
+    color: var(--color3);
+    display: block;
 }
+.slide{
+    display: flex;
+}
+.fotoindex{
+    display: flex;
+    
+}
+@media screen and (max-width:1328px){
+    .container-fluid{
+        background-color: var(--color1);
+        background-position: 50%;
+    }
+    .contc{
+        background-color: var(--color1);
+        background-position: 50%;
+    }
+    .foto{
+        background-color: var(--color1);
+        background-position: 50%;
+    }
+}
+@media screen and (max-width:960px){
+    .container-fluid{
+        background-color: var(--color2);
+        background-position: 50%;
+    }
+    .nav-link{
+        color: var(--color1);
+        text-align: center;
+    }
+    .foto{
+        background-color: var(--color2);
+    }
+    .contc{
+        color: var(--color1);
+    }
+    .fotoindex{
+        align-content: end;
+        padding-left: 30px;
+    }
+}
+    
