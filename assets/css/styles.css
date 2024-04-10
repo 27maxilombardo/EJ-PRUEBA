@@ -85,9 +85,11 @@
     color: var(--color3);
     display: block;
 }
+/*configuracion del slide*/
 .slide{
     display: flex;
 }
+/*configuracion de la foto*/
 .fotoindex{
     display: flex;
     
