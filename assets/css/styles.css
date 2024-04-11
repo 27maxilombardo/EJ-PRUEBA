@@ -98,6 +98,11 @@
     padding: 0px;
     padding-left: 0px;
     background-color: var(--color1);
+    display: flex;
+    
+}
+.card-text{
+    padding-right: 0px;
 }
 @media screen and (max-width:1328px){
     .container-fluid{
